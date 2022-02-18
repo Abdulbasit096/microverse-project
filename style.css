@@ -1,9 +1,9 @@
 body{
-    background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg'),linear-gradient(purple,white);
-    background-repeat: no-repeat;
+    background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg') , linear-gradient(90deg,rgba(128, 0, 128, 0.301),rgba(128, 0, 128, 0.301)) ;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -21,6 +21,7 @@ body{
     color: white;
     padding: 2rem;
     margin-top: 1rem;
+    width: 100%;
 
 
 }
@@ -41,4 +42,22 @@ body{
     border-radius: 5px;
     padding: 8px;
 
+}
+.comments-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+textarea{
+    padding: 5px;
+}
+
+button{
+    margin-top: 15px;
+    background-color: #37af65;
+    padding: 10px;
+    color: white;
+    border-radius: 2px;
+    border: none;
 }
