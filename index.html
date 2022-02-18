@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="form-title">
         <h1>
             freeCodeCamp Survey Form
         </h1>
         <i>
-            Thank you for taking the time to help us improve the platform 
+            Thank you for taking the time to help us improve the platform
         </i>
     </div>
-    <form id="survey-form" action="">
+    <form class="form" id="survey-form" action="">
         <div class="form1">
             <label for="">Name</label>
             <input id="name" type="text" placeholder="Enter your name">
@@ -26,14 +28,34 @@
             <input id="age" type="number" placeholder="Age">
             <label for="cars">Which option best describes your current role?</label>
 
-            <select name="cars" id="cars">
-            <option value="student">Student</option>
-            <option value="fulljob">Full Time Job</option>
-            <option value="fulllearner">Fulltime Learner</option>
-            <option value="audi">Prefer not to say</option>
-            <option value="notsay">Other</option>
+            <select name="role" id="role">
+                <option selected disabled>Select a current role</option>
+                <option value="student">Student</option>
+                <option value="fulljob">Full Time Job</option>
+                <option value="fulllearner">Fulltime Learner</option>
+                <option value="audi">Prefer not to say</option>
+                <option value="notsay">Other</option>
             </select>
+            <label for="">
+                Would you recommend freeCodeCamp to a friend?
+            </label>
+
+            <div>
+                <input value="def" type="radio"name="recommend" type="radio">
+                <label>Definitely</label>
+            </div>
+            <div>
+                <input value="maybe" name="recommend" type="radio">
+                <label>Maybe</label>
+            </div>
+
+            <div>
+                <input value="not-sure" name="recommend" type="radio">
+                <label>Not sure</label>
+            </div>
+
         </div>
     </form>
 </body>
+
 </html>
